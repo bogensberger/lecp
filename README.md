@@ -47,3 +47,24 @@ bin/buildout -N
 ```
 
 ## Run
+
+To start crate run:
+
+```
+bin/crate
+```
+
+To start php run:
+
+```
+bin/php
+```
+
+To start nginx run:
+
+```
+bin/nginx
+```
+
+The nginx is listening on port 8888 and crate uses the default
+port which is configured to 4200.
