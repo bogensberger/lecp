@@ -68,3 +68,30 @@ bin/nginx
 
 The nginx is listening on port 8888 and crate uses the default
 port which is configured to 4200.
+
+If you start everything you should be able to open `localhost:8888`
+in your browser and see a hello world page, which shows you the
+version of the current crate cluster.
+
+## Folder structure
+
+
+```
+bin/crate   # Crate
+bin/crash   # The crate shell
+bin/php     # php
+bin/nginx   # nginx, listening on port 8888
+etc/
+  crate/
+    config/ # crate config directory
+nginx/      # nginx configuration
+var/
+  crate/    # crate data directory
+  log/
+    crate/  # crate log directory
+    nginx/  # nginx log directory
+  www/      # webserver root
+```
+
+The webserver root `var/www/`contains an `index.php` which performs
+a query to the crate database.
